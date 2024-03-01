@@ -1,1 +1,13 @@
-ReactDOM.render(<h2>Sono felice di iniziare react</h2>, document.getElementById("root"))
+function MainContent(){
+    return(
+        <p>Questo è il componente main</p>
+    );
+}
+
+
+ReactDOM.render(
+<div>
+    <h1>NavBar</h1>
+    <MainContent/>
+</div>,
+document.getElementById("root"))
