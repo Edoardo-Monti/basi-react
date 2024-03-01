@@ -4,10 +4,23 @@ function MainContent(){
     );
 }
 
+function NavBar(){
+    return(
+        <h1>NavBar</h1>
+    )
+}
+
+function Footer(){
+    return(
+        <h3>Footer</h3>
+    )
+}
+
 
 ReactDOM.render(
 <div>
-    <h1>NavBar</h1>
+    <NavBar/>
     <MainContent/>
+    <Footer/>
 </div>,
 document.getElementById("root"))
