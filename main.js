@@ -1,35 +1,38 @@
-// function MainContent(){
-//     return(
-//         <p>Questo è il componente main</p>
-//     );
-// }
+function Header(){
+    return(
+        <div className="d-flex align-items-center justify-content-between">
+            <h1>Motivi per la quale voglio imparare react</h1>
+            <ul className="d-flex align-items-center">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    )
+}
 
-// function NavBar(){
-//     return(
-//         <h1>NavBar</h1>
-//     )
-// }
+function MainContent(){
+    return(
+        <ol>
+            <li>imparare un nuovo linguaggio</li>
+            <li>iniziare a lavorare il prima possibile</li>
+            <li>react è molto richiesto</li>
+        </ol>
+    )
+}
+function MyApp(){
+    return (
+        <div>
+            <Header/>
+            <MainContent/>
+            <Footer/>
+        </div>
+    )
+} 
 
-// function Footer(){
-//     return(
-//         <h3>Footer</h3>
-//     )
-// }
-
-
-// ReactDOM.render(
-// <div>
-//     <NavBar/>
-//     <MainContent/>
-//     <Footer/>
-// </div>,
-// document.getElementById("root"))
-const newElem = document.createElement("p")
-const box = document.getElementById("root")
-
-newElem.textContent = "ciao sono il nuovo contenuto"
-newElem.className = "paragraph" 
-
-
-box.appendChild(newElem)
-console.log(newElem)
+function Footer(){
+    return(
+        <p>Questo è il mio footer</p>
+    )
+}
+ReactDOM.render(<MyApp/>, document.getElementById("root"))
